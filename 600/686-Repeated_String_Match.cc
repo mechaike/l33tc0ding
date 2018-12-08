@@ -15,8 +15,8 @@ using namespace std;
 
 int repeatedStringMatch(string A, string B) {
   string a = A;
-  int max_repeats = (B.size()/a.size()) + 2;
-
+  int max_repeats = (B.size()/a.size()) + 2;  //we don't need to loop more than
+                                              //this amount.
   for (int i = 1; i <= max_repeats; ++i)
   {
     if(a.size() >= B.size() && a.find(B) != string::npos)
